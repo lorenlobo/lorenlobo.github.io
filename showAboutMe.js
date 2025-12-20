@@ -5,7 +5,7 @@ var aboutMe=document.getElementById('bio');
 
 var engagePartyMode=document.getElementById('startParty');
 var disengagePartyMode=document.getElementById('stopParty');
-var thePage=document.getElementsByTagName("body");
+var thePage=document.getElementById('thePage');
 
 
 toggleShow.addEventListener('click',function(e){
