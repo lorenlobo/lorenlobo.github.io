@@ -3,6 +3,11 @@ var toggleShow=document.getElementById('more');
 var toggleHide=document.getElementById('less');
 var aboutMe=document.getElementById('bio');
 
+var engagePartyMode=document.getElementById('partyNow');
+var disengagePartyMode=document.getElementById('stopParty');
+var thePage=document.getElementsByTagName("body");
+
+
 toggleShow.addEventListener('click',function(e){
 	e.stopPropagation();
 	aboutMe.classList.remove('hidden');
@@ -13,6 +18,20 @@ toggleShow.addEventListener('click',function(e){
 toggleHide.addEventListener('click',function(e){
 	e.stopPropagation();
 	aboutMe.classList.add('hidden');
-        toggleShow.classList.remove('hidden');
+    toggleShow.classList.remove('hidden');
 	toggleHide.classList.add('hidden');
+});
+
+engagePartyMode.addEventListener('click',function(e){
+	e.stopPropagation();
+	engagePartyMode.classList.add('hidden');
+	disengagePartyMode.classList.remove('hidden');
+	thePage.classList.add('party');
+});
+
+disengagePartyMode.addEventListener('click',function(e){
+	e.stopPropagation();
+	engagePartyMode.classList.remove('hidden');
+	disengagePartyMode.classList.add('hidden');
+	thePage.classList.remove('party');
 });
