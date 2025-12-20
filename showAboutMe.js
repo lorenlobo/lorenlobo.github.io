@@ -13,6 +13,10 @@ toggleShow.addEventListener('click',function(e){
 	aboutMe.classList.remove('hidden');
 	toggleHide.classList.remove('hidden');
 	toggleShow.classList.add('hidden');
+
+	engagePartyMode.classList.remove('hidden');
+	disengagePartyMode.classList.add('hidden');
+	thePage.classList.remove('party');
 });
 
 toggleHide.addEventListener('click',function(e){
