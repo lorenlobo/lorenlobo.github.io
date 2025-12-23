@@ -94,6 +94,7 @@ background-size: 1800% 1800%;
     100%{background-position:0% 82%}
 }
 
+.extender {height:300vh!important;}
 
 html {
 background:var(--black-color)!important;
